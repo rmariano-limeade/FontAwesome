@@ -109,6 +109,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		666CB8F92458DE030006CD07 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		8401A8C81B39601400269D14 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +139,7 @@
 		8401A8D41B39601400269D14 /* FontAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				666CB8F92458DE030006CD07 /* UIKit */,
 				841575D91B3A490A001092B6 /* Enum.swift */,
 				8401A8D71B39601400269D14 /* FontAwesome.h */,
 				8401A8F01B39610F00269D14 /* FontAwesome.swift */,
