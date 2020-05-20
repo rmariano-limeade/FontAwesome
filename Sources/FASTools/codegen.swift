@@ -4,10 +4,19 @@ import SwiftCLI
 class CodegenCommand: Command {
     let name = "codegen"
 
-    @Flag("--fa-pro", description: "Use the Font Awesome Pro font")
-    var fapro: Bool
+    enum IconSet: String, ConvertibleFromString, CaseIterable {
+        case fontAwesome, fontAwesomePro
+    }
+    @Param var iconSet: IconSet
     
     func execute() throws {
+        switch iconSet {
+        case .fontAwesome   : try generateFontAwesome(usePro: false)
+        case .fontAwesomePro: try generateFontAwesome(usePro: true)
+        }
+    }
+    
+    private func generateFontAwesome(usePro fapro: Bool) throws {
         let path: String = "FortAwesome/" + ((fapro) ? "Font-Awesome-Pro" : "Font-Awesome") + "/metadata/icons.json"
         
         guard let json = FileManager.default.contents(atPath: path) else {

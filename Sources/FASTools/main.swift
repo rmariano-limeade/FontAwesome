@@ -9,4 +9,4 @@ import Foundation
 import SwiftCLI
 
 let cli = CLI(name: "tools", version: "1.0.0", description: "FontAwesome.swift toolkit", commands: [CodegenCommand()])
-cli.go(with: ["codegen", "--fa-pro"])
+cli.go()
