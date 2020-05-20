@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  FATransition.swift
 //  
-//
-//  Created by Mason Phillips on 5/20/20.
+// Code copyright (c) 2014-present FontAwesome.swift contributors
+// Refer to LICENSE file for license
 //
 // WARNING: Everything in this file will be deprecated
 // when the next minor version or greater is released.

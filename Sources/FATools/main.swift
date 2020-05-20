@@ -2,7 +2,8 @@
 //  main.swift
 //  
 //
-//  Created by Mason Phillips on 5/20/20.
+// Code copyright (c) 2014-present FontAwesome.swift contributors
+// Refer to LICENSE file for license
 //
 
 import Foundation
