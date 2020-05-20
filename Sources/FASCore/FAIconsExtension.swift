@@ -13,6 +13,11 @@ extension FAIcon {
         return FAIcon.allCases.filter { $0.supportedStyles.contains(type) }
     }
     
+    /// Check if current icon supports a specific style
+    public func isSupported(style: FAIconStyle) -> Bool {
+        return self.supportedStyles.contains(style)
+    }
+    
     /// All icons that are in the Brands font
     public var allBrands: [FAIcon] {
         return FAIcon.allIcons(matching: .brands)
@@ -39,7 +44,7 @@ extension FAIcon {
         var mutcode = code
         if !mutcode.starts(with: "fa-") { mutcode = "fa-\(mutcode)" }
         
-        guard let icon = FAIcon.allCases.filter { $0.rawValue == mutcode }.first else {
+        guard let icon = FAIcon.allCases.filter({ $0.rawValue == mutcode }).first else {
             return nil
         }
         self = icon
