@@ -11,21 +11,21 @@ let package = Package(
         .executable(name: "tools", targets: ["tools"]),
         .library(
             name: "FontAwesome.swift",
-            targets: ["FASCore", "FASUIKit"]
+            targets: ["FACore", "FAUIKit"]
         ),
     ],
     dependencies: [
         .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.0")
     ],
     targets: [
-        .target(name: "tools", dependencies: ["SwiftCLI"], path: "Sources/FASTools"),
+        .target(name: "tools", dependencies: ["SwiftCLI"], path: "Sources/FATools"),
         .target(
-            name: "FASCore",
+            name: "FACore",
             dependencies: []
         ),
         .target(
-            name: "FASUIKit",
-            dependencies: ["FASCore"]
+            name: "FAUIKit",
+            dependencies: ["FACore"]
         )
     ]
 )

@@ -6,7 +6,10 @@
 //
 
 import UIKit
-import FASCore
+#if canImport(FACore)
+    import FACore
+#endif
+
 
 extension UILabel: FASConformable {
     public func loadFont() throws {
