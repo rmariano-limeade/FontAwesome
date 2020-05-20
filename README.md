@@ -1,3 +1,3 @@
 # FontAwesome.swift
 
-A description of this package.
+Use Font Awesome in your Swift projects
