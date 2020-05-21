@@ -17,7 +17,9 @@ struct SVG: Codable {
     let viewBox: [String]
     let width: UInt
     let height: UInt
-    let path: Path
+
+    // Commenting out to generate Enum.swift file (https://github.com/thii/FontAwesome.swift/issues/232#issuecomment-580779045)
+    // let path: Path
 }
 
 struct Path: Codable {
