@@ -38,7 +38,7 @@ public struct FontAwesomeConfig {
     ///
     /// To use Font Awesome Pro fonts, you should add these to your main project and
     /// make sure they are added to the target and are included in the Info.plist file.
-    public static var usesProFonts: Bool = false
+    public static var usesProFonts: Bool = true
 }
 
 public enum FontAwesomeStyle: String {
