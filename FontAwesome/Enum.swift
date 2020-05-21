@@ -1621,7 +1621,7 @@ public enum FontAwesome: String, CaseIterable {
     case registered = "fa-registered"
     case removeFormat = "fa-remove-format"
     case renren = "fa-renren"
-    case repeat = "fa-repeat"
+    case `repeat` = "fa-repeat"
     case repeat1 = "fa-repeat-1"
     case repeat1Alt = "fa-repeat-1-alt"
     case repeatAlt = "fa-repeat-alt"
